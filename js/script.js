@@ -12,14 +12,15 @@
 
 const apiUrl = "https://flynn.boolean.careers/exercises/api/random/mail";
 
+const lista = document.querySelector("li");
 
 //chiamare API del server per prelevare 1 mail random
 
 axios.get("https://flynn.boolean.careers/exercises/api/random/mail")
     .then(function(resp){
-    //la funzione per ricevere risposta
-    risposta = resp;
-    console.log(resp.data.response);
+
+    const randomMail = resp.data.response;
+    lista.innerHTML = randomMail;
 });
 
 

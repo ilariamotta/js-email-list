@@ -42,3 +42,16 @@ li {
     background-color: lemonchiffon;
     outline: thick ridge rgb(255, 255, 255);
 }
+
+button {
+    border: none;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: 2px dotted rgb(255, 255, 255);
+}

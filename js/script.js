@@ -13,12 +13,12 @@
 const apiUrl = "https://flynn.boolean.careers/exercises/api/random/mail";
 
 const lista = document.querySelector("ul");
+const bottone = document.querySelector("button")
 
 //chiamare API del server per prelevare 1 mail random
 //ciclo for per creare 10 mail random
 
-arrayMail = [];
-
+bottone.addEventListener("click",function(){
 for (let i = 0; i < 10; i++){
 axios.get("https://flynn.boolean.careers/exercises/api/random/mail")
     .then(function(resp){
@@ -28,6 +28,10 @@ axios.get("https://flynn.boolean.careers/exercises/api/random/mail")
     lista.append(li);
 });
 }
+bottone.innerHTML = "Ri-genera le tue mail!"
+lista.innerHTML = "";
+});
+
 
 
 

@@ -17,15 +17,16 @@ const lista = document.querySelector("ul");
 //chiamare API del server per prelevare 1 mail random
 //ciclo for per creare 10 mail random
 
+arrayMail = [];
 
-for (let i = 0; i < 10; i++) {
-    axios.get("https://flynn.boolean.careers/exercises/api/random/mail")
-        .then(function (resp) {
-            const randomMail = resp.data.response;
-            const li = document.createElement("li");
-            li.innerHTML = randomMail;
-            lista.append(li);
-        });
+for (let i = 0; i < 10; i++){
+axios.get("https://flynn.boolean.careers/exercises/api/random/mail")
+    .then(function(resp){
+    const randomMail = resp.data.response;
+    const li = document.createElement("li");
+    li.innerHTML = randomMail;
+    lista.append(li);
+});
 }
 
 

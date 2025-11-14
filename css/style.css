@@ -1,9 +1,44 @@
+/* debug */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* typography */
+
+body {
+  font-family: Arial, Helvetica, sans-serif
+
+}
+
+li {
+    font-style: italic;
+
+}
+
+h1 {
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px #000000;
+}
+
+
+
+/* other */
 body {
     background-color: paleturquoise;
+    background-image: url(https://media.istockphoto.com/id/1363086528/vector/seamless-pattern.jpg?s=612x612&w=0&k=20&c=bJGlM5JBV4x04cTmsL1NGYEmM--XoBKN1E2edLe7Pzc=);
+}
+
+
+ul {
+list-style-type: none;
+}
+
+li {
+    margin: 20px 0;
+    padding: 10px 0;
+    background-color: lemonchiffon;
+    outline: thick ridge rgb(255, 255, 255);
 }
